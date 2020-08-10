@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 65px; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a i {
+    color: #e45b5b;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 2px;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    padding: 5px 5px;
+}
+
+nav a {
+    font-weight: noraml;
+    padding: 10px 5px;
+    font-size: 1rem;
+    color: black;
+}
+
+.button {
+    border: 1px solid #eee;
+    padding: 5px 5px;
+    width: 90px;
+    border-radius: 25px;
+    box-shadow: 10px #888888;
+}
+
+.dropdown-menu {
+    left: 50% !important;
+    right: auto !important;
+    text-align: center !important;
+    transform: translate(-50%, 0) !important;
+    border: 1px solid #eee;
+    border-radius: 30px;
+}
+
+li a:hover {
+    background-color: #eee;
+    border-radius: 20px;
+    color: black;
+}
+
+li .button a:hover{
+    box-shadow: 6px 6px 6px 6px #888888;
+}
+
+
+/* //////////////////////////////////////////////////////////navbar////////////////////////////////////////////////// */
+
+.links {
+    margin-top: 160px;
+    text-decoration: none;
+}
+
+.links a {
+    padding: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+.links a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.links a .active {
+    text-decoration: underline;
+}
+
+.shift {
+    height: 80px;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 20px;
+    font-size: 15px;
+    box-shadow: 3px 3px 3px 3px #999;
+    border-radius: 10px;
+    /* background: transparent; */
+}
+
+.shift h6 {
+    font-size: 10px;
+}
+
+.search {
+    margin-left: 190px;
+    width: 120px;
+    height: 50px;
+    background-color: #e45b5b;
+    border-radius: 20px;
+    color: white;
+}
+
+.shift>div:hover {
+    border: 1px solid #eee;
+    border-radius: 15px;
+}
+
+/*//////////////////////////////////heading message/////////////////////////////////////// */
+
+.header {
+    height: 130px;
+    width: 100%;
+    margin-top: 80px;
+    font-family: 'Montserrat', sans-serif;
+    color: #e45b5b;
+    font-weight: bold;
+}
+
+.header h1 {
+    font-size: 3em;
+}
+
+/* /////////////////////////////////////////////cards////////////////////////////////////////////////////// */
+
+.portfolio {
+    height: 400px;
+}
+
+.container .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-top: 40px;
+}
+
+.row .card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.row .card {
+    padding: auto;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 5px 0px 0px #999;
+}
+
+/* .///////////////////////////////////////////////grid/////////////////////////////////////////////////////// */
+
+.grid {
+    height: 800px;
+    background-color: black;
+    color: white;
+
+}
+
+.first {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: white;
+}
+
+.first .explore button {
+    height: 35px;
+    padding: 5px;
+    margin-left: 25em;
+    background: transparent;
+    width: 150px;
+    border-radius: 15px;
+    color: white;
+}
+
+.second {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: black;
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+.one {
+    margin-top: 40px;
+    height: 500px;
+}
+
+.two {
+    margin-top: 40px;
+}
+
+.second .two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.two .card {
+    background-color: grey;
+    color: white;
+    border-radius: 20px;
+}
+
+/* ///////////////////////////////////////////messages/////////////////////////////////////////////// */
+
+.grider {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+    height: 250px;
+}
+
+.grider .heading1 h2 {
+    width: 450px;
+    font-weight: bold;
+
+}
+
+.grider .heading1 button {
+    width: 120px;
+    height: 40px;
+    padding: 7px;
+    margin-top: 10px;
+    border-radius: 20px;
+    text-align: center;
+    color: violet;
+    border: 0.5px solid violet;
+}
+
+.grider .heading2 p {
+    width: 400px;
+    height: 300px;
+    margin-left: 65px;
+    font-size: 18px;
+
+}
+
+/* //////////////////////////////////////lists///////////////////////////////////////////////// */
+.lister {
+    background-color: #eee;
+    height: 500px;
+}
+
+.lister h3 {
+    margin-top: 30px;
+}
+
+.lister h3 {
+    margin-top: 60px;
+}
+
+.grinding {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-top: 60px;
+
+}
+
+.grinding .list1 h5 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: lightblack;
+}
+
+.list1 p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.list1 h6:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+/* //////////////////////////////////////////////////////countries/////////////////////////////////// */
+.countries {
+    margin-top: 60px;
+
+    height: 300px;
+}
+
+.countries h3 {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.country {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.country div {
+    margin: 0px 0px 15px 0px;
+    font-size: 17px;
+}
+
+.country div a {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* //////////////////////////////////////////////about//////////////////////////////////////////// */
+
+.about {
+    height: 370px;
+
+}
+
+.gridder {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 50px;
+}
+
+.gridder .list2 h5 {
+    font-size: 14px;
+}
+
+.gridder .list2 div {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.gridder .list2 div a {
+    color: black;
+    font-size: 16px;
+}
+
+/* //////////////////////////////////////////footer/////////////////////////////////////////// */
+footer {
+    height: 70px;
+}
+
+.wrapping {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.wrapping .anchor a {
+    color: black;
+}
+
+.wrapping .movingicons .icons {
+    margin-left: 300px;
+}
+
+.wrapping .movingicons .icons i {
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.wrapping .movingicons .icons a {
+    color: black;
+}
